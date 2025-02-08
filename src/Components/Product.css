@@ -1,0 +1,31 @@
+#product_main{
+    width: 40vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 60vh;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+#img{
+    width: 20vw;
+    height:45vh;
+}
+#product_name{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+#product_image{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+#button{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+
+}

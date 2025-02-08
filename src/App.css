@@ -1,0 +1,14 @@
+.nav_link{
+    font-size: xx-large;
+    color: white;
+    padding-right: 40px;
+    text-decoration: solid;   
+}
+#nav_files{
+    background-color: rgb(5, 175, 178) ;
+
+    display: flex;
+    
+    justify-content: flex-end;
+    padding: 20px 10px;
+}
