@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import './App.css';
 import About from './Components/About';
 import Cart from './Components/Cart';
@@ -13,6 +14,8 @@ import { Link } from "react-router-dom";
 
 
 function App() {
+
+  const[cartitems,setcartitems]=useState([])
   return (
     <div className="App">
       <header>
@@ -33,11 +36,11 @@ function App() {
       </div>
       </header>
       <Routes>
-        <Route path='/' element={<Main/>}/>
+        <Route path='/' element={<Main setcartitems={setcartitems}/>}/>
         <Route path='/Home' element={<Main/>}/>
         <Route path='/About' element={<About/>}/>
         <Route path='/Contact' element={<Contact/>}/>
-        <Route path='/Cart' element={<Cart/>}/>
+        <Route path='/Cart' element={<Cart  mycart={cartitems}/>}/>
 
       </Routes>
       

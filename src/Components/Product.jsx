@@ -1,7 +1,8 @@
 import React from 'react'
 import './Product.css'
-
-function Product({props}) {
+import main from './Main.jsx'
+import Cart from './Cart.jsx'
+function Product({props,changefunction}) {
   return (
     <div>
       <div id='product_main'>
@@ -16,7 +17,7 @@ function Product({props}) {
 
         </div>
         <div id='button'>
-          <button>Add to Cart</button>
+          <button onClick={()=>changefunction(props)}>Add to Cart</button>
         </div>
 
       </div>
