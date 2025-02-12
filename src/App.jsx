@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 function App() {
 
-  const[cartitems,setcartitems]=useState([])
+  const[cartItems,setCartitems]=useState([]);
   return (
     <div className="App">
       <header>
@@ -36,11 +36,11 @@ function App() {
       </div>
       </header>
       <Routes>
-        <Route path='/' element={<Main setcartitems={setcartitems}/>}/>
-        <Route path='/Home' element={<Main/>}/>
+        <Route path='Home' element={<Main setcartitems={setCartitems}/>}/>
+        
         <Route path='/About' element={<About/>}/>
         <Route path='/Contact' element={<Contact/>}/>
-        <Route path='/Cart' element={<Cart  mycart={cartitems}/>}/>
+        <Route path='/Cart' element={<Cart  mycart={cartItems}/>}/>
 
       </Routes>
       

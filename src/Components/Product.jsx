@@ -1,7 +1,5 @@
 import React from 'react'
 import './Product.css'
-import main from './Main.jsx'
-import Cart from './Cart.jsx'
 function Product({props,changefunction}) {
   return (
     <div>
