@@ -3,7 +3,7 @@ import './Cart.css'
 function Cart({mycart}) {
   return (
     <div>
-      <div id='stylecart'>
+    
       <div id='color'>
         <h1 >This is my Cart</h1>
       </div >
@@ -18,7 +18,7 @@ function Cart({mycart}) {
         ))}</div>)
       }
       </div>
-      </div>
+    
       
     </div>
   )
