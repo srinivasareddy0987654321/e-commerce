@@ -5,7 +5,7 @@ function Cart({mycart}) {
     <div>
     
       <div id='color'>
-        <h1 >This is my Cart</h1>
+        <h1 >This is Cart</h1>
       </div >
       <div>
         {mycart.length===0? (<div>Your Cart is empty</div>):
